@@ -35,7 +35,7 @@ jobs:
         name: Pre-Compiled Firmware (${{ steps.vars.outputs.branch }}-${{ steps.vars.outputs.sha_short }})
         path: '*.bin'
         
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       if: ${{ always() }}
       with:
         name: Pre-Compiled Firmware
